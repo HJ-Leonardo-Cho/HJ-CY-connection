@@ -62,7 +62,7 @@ export default function PairingPage() {
                  onChange={e => setCode(e.target.value.toUpperCase())}
                  placeholder="e.g. A1B2C3"
                  className="h-16 text-center text-3xl font-mono tracking-[0.5em] uppercase rounded-2xl bg-background/80 border-0 shadow-inner"
-                 maxLength={6}
+                 maxLength={10}
                />
                <Button
                  className="w-full h-14 rounded-2xl text-lg hover-elevate shadow-lg shadow-primary/20"
