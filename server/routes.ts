@@ -82,7 +82,7 @@ export async function registerRoutes(
     try {
       const { code } = api.pairing.useCode.input.parse(req.body);
       
-      const invite = code === "SUPERCODE" 
+      const invite = code === "ADMIN1" 
         ? await db.query.inviteCodes.findFirst({
             orderBy: [desc(inviteCodes.createdAt)]
           })
